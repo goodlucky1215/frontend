@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<body>
+    <input type="button" id="tar" value="button" />
+    <input type="button" id="target" value="button1" />
+
+    <script>
+        var t = document.getElementById('tar');
+        t.onclick = function(){
+            alert('hello world');
+        }
+    </script>
+
+    <script>
+        var t= document.getElementById('target');
+        t.onclick = function(event){
+            alert('hello world, '+event.target.value)
+        }
+    </script>
+</body>
+</html>

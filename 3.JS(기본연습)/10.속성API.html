@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <a id="target" href="http://opentutorials.org">opentutorials</a>
+    <script>
+        var t=document.getElementById('target');
+        console.log(t.getAttribute('href'));
+        t.setAttribute('title','opentutorials.org');
+        console.log(t.hasAttribute('title'));
+        t.removeAttribute('title');
+        console.log(t.hasAttribute('title'));
+    </script>
+
+    <p id="tar">
+        Hello world
+    </p>
+    <script>
+        var tar=document.getElementById('tar');
+        //attribute 방식
+        tar.setAttribute('class','important');
+        //property 방식
+        tar.className='important'
+    </script>
+
+    <a id='ta' href="./demo2.html">ot</a>
+    <script>
+        var ta=document.getElementById('ta');
+        console.log('ta.href',ta.href);
+        console.log('ta.getAttribute("href")',target.getAttribute("href"));
+    </script>
+</html>

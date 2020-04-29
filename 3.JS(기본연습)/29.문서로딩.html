@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        window.addEventListener('DOMContentLoaded',function(){
+            var t=document.getElementById('target');
+            console.log(t);
+        })
+
+        //load 대신 DOMContentLoaded는 문서에서 스크립트 작업 할 수 있을 때,
+        // 실행되기 때문에 이미지 다운로드를 기다릴 필요가 없다.
+        //이미지 이전에 html 태그를 전부다 실행후에!
+    </script>
+</head>
+
+<body>
+    <p id="target">Hello</p>
+    <img src="https://www.google.co.kr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<body>
+    <ul id="target">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="tar">Javascript</li>
+    </ul>
+    <input type="button" onclick="callAppendChild();" value="appendChild()" />
+    <input type="button" onclick="callInsertBefore();" value="insertBefore()" />
+    <input type="button" onclick="callRemoveChild();" value="removeChild()" />
+    <input type="button" onclick="callReplaceChild();" value="removeChild()"/>
+    <script>
+        function callAppendChild(){
+            var target = document.getElementById('target');
+            var li = document.createElement('li');
+            var text = document.createTextNode('Javascript');
+            li.appendChild(text); //li에다가 'Javascript'애를 추가했고,
+            target.appendChild(li);//이를 target에 붙여서 'Javascript'가 붙은 li가 된 것.
+        }
+
+        function callInsertBefore(){
+            var target = document.getElementById('target');
+            var li = document.createElement('li');
+            var text = document.createTextNode('jQuery');
+            li.appendChild(text);
+            target.insertBefore(li, target.firstChild);
+        }
+
+        function callRemoveChild(){
+            var target = document.getElementById('target');
+            target.parentNode.removeChild(target);
+        }
+
+        function callReplaceChild(){
+            var a = document.createElement('a');
+            a.setAttribute('href', 'www.naver.com')
+            a.appendChild(document.createTextNode('Web browser JavaScript'));
+
+            var tar = document.getElementById('tar');
+            tar.replaceChild(a,tar.firstChild); //replaceChild(newChild, oldChild)
+        }
+    </script>
+</body>
+</html>

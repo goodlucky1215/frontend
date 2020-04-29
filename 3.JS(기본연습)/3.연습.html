@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+    <body>
+        <input type="button" value="alert" onclick="alert('hello world');"/>
+
+        <input type="button" value="confirm" onclick="func_confirm()" />
+        <script>
+            function func_confirm(){
+                if(confirm('ok?')){
+                    alert('ok');
+                } else {
+                    alert('cancle');
+                }
+            }
+        </script>
+
+        <input type="button" value="prompt" onclick="func_prompt()" />
+        <script>
+            function func_prompt(){
+                if(prompt('id?') === 'egoing'){
+                    alert('welcome');
+                } else {
+                    alert('fail');
+                }
+            }
+        </script>
+    </body>
+</html>

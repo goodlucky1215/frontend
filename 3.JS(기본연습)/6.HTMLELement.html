@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+    <body>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li id="active">JavaScript</li>
+        </ul>
+        <script>
+            var li=document.getElementById('active');//document.getElementById : 리턴 데이터 타입은 HTMLLIELement
+            console.log(li.constructor.name);
+            var lis=document.getElementsByTagName('li');//document.getElementsByTagName : 리턴 데이터 타입은 HTMLCollectio
+            console.log(lis.constructor.name);
+        </script>
+    </body>
+</html>

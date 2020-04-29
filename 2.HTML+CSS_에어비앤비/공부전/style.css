@@ -1,0 +1,103 @@
+    <style>
+
+      *{
+        background-color: #C8EFD4;
+        background-image: url("1.JPG");
+        background-size: 100% 800px;
+        background-repeat: no-repeat;
+      }
+      #A{
+        position:sticky;
+        color: white;
+        margin-top: 15px;
+        word-spacing:23px;
+      }
+      #A1{
+        position:sticky;
+        color: white;
+        margin-left: 1450px;
+        margin-top: 700px;
+      }
+      #B{
+        padding:30px 2px 0 80px;
+      }
+      #gridA{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:0px 80px 80px 80px;
+      }
+      #grid1,#grid2,#grid3{
+        display:grid;
+        overflow: hidden;
+        border: 1px gray solid;
+        border-radius: 10px;
+        margin-right: 10px;
+        grid-template-columns: 1fr 4fr;
+      }
+      #grid1-1,#grid1-2,#grid1-3{
+        font-weight: 700;
+        padding: 45px 45px 0px 45px;
+      }
+      #C {
+        padding:30px 2px 0 80px;
+      }
+      #gridB{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding:25px 80px 0px 80px;
+      }
+      #D{
+        color:green;
+        padding: 10px 0px 50px 80px;
+      }
+      #F{
+        color:green;
+        padding: 0px 0px 50px 80px;
+        margin: 0 0 0 0;
+      }
+      #E, #G{
+        padding:30px 2px 0 80px;
+      }
+      #gridC, #gridD{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding:10px 80px 0px 80px;
+      }
+      #grid44-1, #grid44-2, #grid44-3,#grid44-4,#grid44-5, #grid44-6{
+        display:grid;
+        grid-template-rows: 320px 80px;
+        padding-right: 17px;
+
+      }
+      #grid4-1, #grid4-2,#grid4-3,#grid4-4,#grid4-5,#grid4-6{
+        display:grid;
+        overflow: hidden;
+        border: 1px white solid;
+        border-radius: 10px;
+        margin-right: 0px;
+      }
+      #grid55-1, #grid55-2, #grid55-3,#grid55-4,#grid55-5, #grid55-6, #grid55-7,#grid55-8{
+        display:grid;
+        grid-template-rows: 260px 80px;
+        padding-right: 17px;
+      }
+      #gridB-1,#gridB-2,#gridB-3,#gridB-4,#gridB-5,#gridB-6{
+        font-size: 15px;
+      }
+      #grid5-1, #grid5-2,#grid5-3,#grid5-4,#grid5-5,#grid5-6,#grid5-7,#grid5-8{
+        display:grid;
+        overflow: hidden;
+        border: 1px white solid;
+        border-radius: 10px;
+        margin-right: 0px;
+      }
+      #gridC-1,#gridC-2,#gridC-3,#gridC-4,#gridC-5,#gridC-6,#gridC-7,#gridC-8{
+        font-size: 18px;
+      }
+      }
+      #grid6-1,#grid6-2,#grid6-3,#grid6-4,#grid6-5,#grid6-6,#grid6-7,#grid6-8{
+        font-size: 18px;
+
+      }
+
+    </style>

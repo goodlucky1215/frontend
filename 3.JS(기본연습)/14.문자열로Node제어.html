@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<body>
+    <ul id="target">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <input type="button" onclick="get() ;" value="get" />
+    <input type="button" onclick="set() ;" value="set" />
+
+    <input type="button" onclick="get1() ;" value="get1" />
+    <input type="button" onclick="set1() ;" value="set1" />
+
+    <input type="button" onclick="get2() ;" value="get2" />
+    <input type="button" onclick="set2() ;" value="set2" />   
+
+    <script>
+        function get() {
+            var target = document.getElementById('target');
+            alert(target.innerHTML);
+        }
+        function set() {
+            var target = document.getElementById('target');
+            target.innerHTML = "<li>JavaScript Core</li><li>BOM</li><li>DOM</li>";
+        }
+
+        function get1() {
+            var target = document.getElementById('target');
+            alert(target.outerHTML);
+        }
+        function set1() {
+            var target = document.getElementById('target');
+            target.outerHTML = "<ol><li>JavaScript Core</li><li>BOM</li><li>DOM</li></ol>";
+        }
+
+        function get2() {
+            var target = document.getElementById('target');
+            alert(target.innerText);
+        }
+        function set2() {
+            var target = document.getElementById('target');
+            target.innerText = "<li>JavaScript Core</li><li>BOM</li><li>DOM</li>";
+        }
+    </script>
+</body>
+</html>

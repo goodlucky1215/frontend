@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+    <input id="target2" type="name" />
+
+    <script>
+      var b = document.getElementById("target2");
+      b.addEventListener("blur", function(event) {
+        // 무한루프가 됨 alert("앨리먼트에 포커스가 사라졌을 때 발생");
+        console.log("blur");
+      });
+      b.addEventListener("focus", function(event) {
+        // 무한루프가 됨 alert("앨리먼트에 focus가 생겼을 때 발생");
+        console.log("focus");
+      });
+    </script>
+</body>
+</html>
